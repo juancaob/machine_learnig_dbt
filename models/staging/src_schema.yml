@@ -1,0 +1,48 @@
+version: 2
+
+sources:
+  - name: machine_learning_dbt
+    description: A clone of a Big Query sink.
+    database: airflow-tutorial-336317
+    schema: machine_learning_dbt
+    tables:
+      - name: raw_customers
+        description: Raw customers data.
+        columns:
+          - name: id
+            description: Primary key for customers.
+            tests:
+              - unique
+              - not_null
+
+      - name: raw_orders
+        description: Raw orders data.
+        columns:
+          - name: id
+            description: Primary key for orders.
+            tests:
+              - unique
+              - not_null
+          - name: status
+            description: Order status
+            tests:
+              - accepted_values:
+                  values: ['placed', 'shipped', 'completed', 'return_pending', 'returned' ]
+      - name: raw_credits
+        description: Raw credits.
+        columns:
+          - name: Saldo_Inicial
+            description: Saldo inicial del préstamo en colones
+          - name: Tasa_Interes
+            description: Tasa de interes anual
+          - name: Plazo_en_meses
+            description: Plazo en meses
+          - name: Cuota
+            description: Cuota fija en colones
+      - name: raw_orders_status
+      - name: raw_orders_status_2
+      - name: raw_orders_snapshot
+      - name: raw_credits_abril
+      
+          
+          

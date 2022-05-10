@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: machine_learning_dbt
+    tables:
+      - name: raw_payments
+      - name: raw_stripe_payments
+      
+      
+
+models:
+  - name: stg_payments

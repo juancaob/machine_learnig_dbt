@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_customers
+    
+  - name: stg_orders
+
+  - name: stg_credits
+
+  - name: stg_proyecciones_credito
+
+  - name: stg_proyecciones_credito_2
+    description: Mismo modelo stg_proyecciones_credito pero empleando el macro proyeccion_amortizaciones()
+
+  - name: stg_proyecciones_totales
+    description: Incluye las proyecciones de todos los créditos
+
+  - name: stg_proy_totales_json
+    description: prueba de modelo preparado para convertirse en json
+
+  - name: stg_proy_totales__json
+    description: modelo convertido en struct de json
+
+    

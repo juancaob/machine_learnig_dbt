@@ -1,0 +1,9 @@
+packages:
+  - package: "omnata-labs/dbt_ml_preprocessing"
+    version: [">=1.0.2"]
+    
+  - package: calogica/dbt_expectations
+    version: [">=0.5.0", "<0.6.0"]
+
+  - package: mjirv/dbt_datamocktool
+    version: 0.1.10
