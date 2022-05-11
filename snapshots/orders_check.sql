@@ -3,7 +3,7 @@
 {{
     config(
       target_database='airflow-tutorial-336317',
-      target_schema='snapshots',
+      target_schema='machine_learning_dbt',
       unique_key='id',
 
       strategy='check',
